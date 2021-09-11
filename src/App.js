@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 import Header from "./components/Header";
 import KeepScreen from "./components/KeepScreen";
-import { addNote, setShowNote } from './actions';
+import { addNote, setShowNote } from './Actions';
 
 const App = props => {
 	const [textSelected, setTextSelected] = useState(false);
