@@ -1,6 +1,10 @@
-// const addNote = (state, action) => {
-//     switch (action.type) {
-//         case 'ADD_NOTE':
-//             return {[ ...state,  state]}
-//     }
-// }
+import { combineReducers } from "redux";
+import notesReducer from './NotesReducer';
+import showNoteReducer from "./ShowNoteReducer";
+
+const allReducers = combineReducers({
+    notesReducer,
+    showNoteReducer
+});
+
+export default allReducers;
